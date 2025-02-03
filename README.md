@@ -22,4 +22,4 @@ G) Individual wDC trajectories - *spaghetti_individual_trajectories.R* <br />
 
 <ins>*Several fslmaths (FSL - https://www.sciencedirect.com/science/article/pii/S1053811911010603) commands have been used to additionally manipulate images, e.g. to threshold, binarise or resample images.* </ins>
 
-<ins>*N.B. conda environment file: Project_3_TIA.yml*</ins>
+<ins>*N.B. conda environment file: wDC.yml*</ins>
