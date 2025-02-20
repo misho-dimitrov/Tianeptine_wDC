@@ -8,4 +8,4 @@
 6) Create a graph and obtain graph properties (currently limited to weighted degree centrality)
 7) Convert back to NIfTI (.nii) image and save to disk
 
-Jupyter notebook (environment file - Project_3_TIA.yml) and scripts included.
+Jupyter notebook (environment file - wDC.yml) and scripts included.
