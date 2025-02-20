@@ -2,15 +2,9 @@
 
 [TODO] Create a DOI for the Code, Have a look at this [YouTube tutorial](https://youtu.be/HZ6m8oxwvig?si=bn4xbl5blF8KNle8)
 
-This repository contains resting-state functional MRI (rs-fMRI) data and analysis scripts from our pharmacological study examining the effects of the µ-opioid receptor agonist tianeptine on weighted Degree Centrality (wDC). Specifically, we investigated whether tianeptine modulates sensorimotor and frontoparietal functional connectivity (indexed by wDC) in autistic and non-autistic adults.
+This repository contains processing and analysis scripts from our pharmacological study examining the effects of the µ-opioid receptor agonist tianeptine on weighted Degree Centrality (wDC). Specifically, we investigated whether tianeptine modulates sensorimotor and frontoparietal functional connectivity (indexed by wDC) in autistic and non-autistic adults.
 
 In the study, participants underwent two scanning sessions in a randomised, placebo-controlled, double-blind, crossover design. The final sample consists of 19 non-autistic and 20 autistic adults. We employed multi-echo (ME) ICA denoising and a processing pipeline adapted from [Holiga et al., 2019](https://www.science.org/doi/10.1126/scitranslmed.aat9223) to derive voxel-wise wDC. 
-
-The data include:
-- Binary grey matter mask resampled to the rs-fMRI data
-- Two binary masks corresponding to the sensorimotor and frontoparietal regions (respectively) previously identified in a large, multisite autism study [(Holiga et al., 2019)](https://www.science.org/doi/10.1126/scitranslmed.aat9223)
-- Whole-brain, voxel-wise wDC maps
-- CSV files with the mask-averaged wDC values for each of the two masks, along with  (used in the statistical analysis)
 
 Detailed steps for the analyses—such as the multi-echo ICA denoising, regression of nuisance signals, correlation thresholding, computation of wDC, and linear mixed-effects modeling—are provided below and in the accompanying scripts. We used Unix scripting, [AFNI (Cox, 1996)](https://www.sciencedirect.com/science/article/pii/S0010480996900142), [FSL (Jenkinson et al., 2012)](https://www.sciencedirect.com/science/article/pii/S1053811911010603), Python (pandas, NumPy, matplotlib, SciPy, Scikit-learn, NiBabel, Nilearn, graph-tool) and R (base, p-testR, ggplot2, tidyr, ggpubr and readr) for processing, functional connectivity estimation, statistical analysis and visualisation of results.
 
@@ -41,14 +35,7 @@ To estimate resting-state functional brain connectivity (FC) from fMRI images an
 - Mask-averaged wDC analyses: ``mean_wDC_LMM.R``
 [TODO] - Individual wDC trajectories: ``spaghetti_individual_trajectories.R``
 
-
-## Dataset 
-
-[TODO] Blah blah
-
-## Code 
-
-The conda environment file required is ``wDC.yml``. 
+**N.B. The conda environment file required is ``wDC.yml``. **
 
 ## Licence
 
