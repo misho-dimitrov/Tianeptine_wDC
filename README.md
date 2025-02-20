@@ -35,6 +35,8 @@ To estimate resting-state functional brain connectivity (FC) from fMRI images an
 
 __N.B. The conda environment file required is ``wDC.yml``.__
 
+[![DOI](https://zenodo.org/badge/926665742.svg)](https://doi.org/10.5281/zenodo.14902792)
+
 ## Licence
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
