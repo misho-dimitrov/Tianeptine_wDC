@@ -35,7 +35,7 @@ To estimate resting-state functional brain connectivity (FC) from fMRI images an
 - Mask-averaged wDC analyses: ``mean_wDC_LMM.R``
 [TODO] - Individual wDC trajectories: ``spaghetti_individual_trajectories.R``
 
-**N.B. The conda environment file required is ``wDC.yml``. **
+*N.B. The conda environment file required is ``wDC.yml``. *
 
 ## Licence
 
