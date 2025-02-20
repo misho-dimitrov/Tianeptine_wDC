@@ -1,7 +1,5 @@
 # Pharmacological Modulation of Functional Brain Connectivity in Autism
 
-[TODO] Create a DOI for the Code, Have a look at this [YouTube tutorial](https://youtu.be/HZ6m8oxwvig?si=bn4xbl5blF8KNle8)
-
 This repository contains processing and analysis scripts from our pharmacological study examining the effects of the µ-opioid receptor agonist tianeptine on weighted Degree Centrality (wDC). Specifically, we investigated whether tianeptine modulates sensorimotor and frontoparietal functional connectivity (indexed by wDC) in autistic and non-autistic adults.
 
 In the study, participants underwent two scanning sessions in a randomised, placebo-controlled, double-blind, crossover design. The final sample consists of 19 non-autistic and 20 autistic adults. We employed multi-echo (ME) ICA denoising and a processing pipeline adapted from [Holiga et al., 2019](https://www.science.org/doi/10.1126/scitranslmed.aat9223) to derive voxel-wise wDC. 
