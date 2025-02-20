@@ -4,15 +4,15 @@
 
 This repository contains resting-state functional MRI (rs-fMRI) data and analysis scripts from our pharmacological study examining the effects of the µ-opioid receptor agonist tianeptine on weighted Degree Centrality (wDC). Specifically, we investigated whether tianeptine modulates sensorimotor and frontoparietal functional connectivity (indexed by wDC) in autistic and non-autistic adults.
 
-In the study, participants underwent two scanning sessions in a randomised, placebo-controlled, double-blind, crossover design. The final sample consists of 19 non-autistic and 20 autistic adults. We employed multi-echo (ME) ICA denoising and a processing pipeline adapted from Holiga et al. (2019) to derive voxel-wise wDC. 
+In the study, participants underwent two scanning sessions in a randomised, placebo-controlled, double-blind, crossover design. The final sample consists of 19 non-autistic and 20 autistic adults. We employed multi-echo (ME) ICA denoising and a processing pipeline adapted from [Holiga et al., 2019](https://www.science.org/doi/10.1126/scitranslmed.aat9223) to derive voxel-wise wDC. 
 
 The data include:
 - Binary grey matter mask resampled to the rs-fMRI data
-- Two binary masks corresponding to the sensorimotor and frontoparietal regions (respectively) previously identified in a large, multisite autism study (Holiga et al., 2019)
+- Two binary masks corresponding to the sensorimotor and frontoparietal regions (respectively) previously identified in a large, multisite autism study [(Holiga et al., 2019)](https://www.science.org/doi/10.1126/scitranslmed.aat9223)
 - Whole-brain, voxel-wise wDC maps
 - CSV files with the mask-averaged wDC values for each of the two masks, along with  (used in the statistical analysis)
 
-Detailed steps for the analyses—such as the multi-echo ICA denoising, regression of nuisance signals, correlation thresholding, computation of wDC, and linear mixed-effects modeling—are provided below and in the accompanying scripts. We used Unix scripting, AFNI (Cox, 1996), FSL (Jenkinson et al., 2012), Python (pandas, NumPy, matplotlib, SciPy, Scikit-learn, NiBabel, Nilearn, graph-tool) and R (base, p-testR, ggplot2, tidyr, ggpubr and readr) for processing, functional connectivity estimation, statistical analysis and visualisation of results.
+Detailed steps for the analyses—such as the multi-echo ICA denoising, regression of nuisance signals, correlation thresholding, computation of wDC, and linear mixed-effects modeling—are provided below and in the accompanying scripts. We used Unix scripting, [AFNI (Cox, 1996)](https://www.sciencedirect.com/science/article/pii/S0010480996900142), [FSL (Jenkinson et al., 2012)](https://www.sciencedirect.com/science/article/pii/S1053811911010603), Python (pandas, NumPy, matplotlib, SciPy, Scikit-learn, NiBabel, Nilearn, graph-tool) and R (base, p-testR, ggplot2, tidyr, ggpubr and readr) for processing, functional connectivity estimation, statistical analysis and visualisation of results.
 
 
 ## Running
@@ -31,7 +31,7 @@ To estimate resting-state functional brain connectivity (FC) from fMRI images an
 
 3. Post-processing:
 
-- Resample and binarise the Holiga et al. masks [EU-AIMS masks](https://www.science.org/doi/10.1126/scitranslmed.aat9223) using FSL [fslmaths](https://www.sciencedirect.com/science/article/pii/S1053811911010603)
+- Resample and binarise the [Holiga et al. EU-AIMS masks](https://www.science.org/doi/10.1126/scitranslmed.aat9223) using FSL [fslmaths](https://www.sciencedirect.com/science/article/pii/S1053811911010603)
 - Intersect each with the intersection mask generated using the grey matter masks from all participants (all sessions) ``generate_intersection_mask.ipynb``
 - Estimate mask-averaged values for each mask for each participant session:``generate_mean_DC.ipynb``
 
