@@ -31,7 +31,7 @@ To estimate resting-state functional brain connectivity (FC) from fMRI images an
 
 - Check if the study groups are balanced in terms of age, IQ and in-scanner movement: ``balance_check.ipynb``
 - Mask-averaged wDC analyses: ``mean_wDC_LMM.R``
-- Individual wDC trajectories: ``spaghetti_individual_trajectories.R``
+- Individual wDC trajectories: ``Results_Plot.R``
 
 __N.B. The conda environment file required is ``wDC.yml``.__
 
