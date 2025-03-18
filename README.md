@@ -1,11 +1,16 @@
 # Pharmacological Modulation of Functional Brain Connectivity in Autism
 
-This repository contains processing and analysis scripts from our pharmacological study examining the effects of the µ-opioid receptor agonist tianeptine on weighted Degree Centrality (wDC). Specifically, we investigated whether tianeptine modulates sensorimotor and frontoparietal functional connectivity (indexed by wDC) in autistic and non-autistic adults.
+This repository contains processing and analysis scripts from our pharmacological study examining the effects of the µ-opioid receptor agonist tianeptine on weighted Degree Centrality (wDC). Specifically, we investigated whether tianeptine modulates sensorimotor and frontoparietal functional connectivity (indexed by wDC) in autistic and non-autistic adults. Pre-print on medRxiv
 
 In the study, participants underwent two scanning sessions in a randomised, placebo-controlled, double-blind, crossover design. The final sample consists of 19 non-autistic and 20 autistic adults. We employed multi-echo (ME) ICA denoising and a processing pipeline adapted from [Holiga et al., 2019](https://www.science.org/doi/10.1126/scitranslmed.aat9223) to derive voxel-wise wDC. 
 
 Detailed steps for the analyses—such as the multi-echo ICA denoising, regression of nuisance signals, correlation thresholding, computation of wDC, and linear mixed-effects modeling—are provided below and in the accompanying scripts. We used Unix scripting, [AFNI (Cox, 1996)](https://www.sciencedirect.com/science/article/pii/S0010480996900142), [FSL (Jenkinson et al., 2012)](https://www.sciencedirect.com/science/article/pii/S1053811911010603), Python (pandas, NumPy, matplotlib, SciPy, Scikit-learn, NiBabel, Nilearn, graph-tool) and R (base, p-testR, ggplot2, tidyr, ggpubr and readr) for processing, functional connectivity estimation, statistical analysis and visualisation of results.
 
+## Citation
+
+⚠️ Please use the following article for reference:
+
+Mihail Dimitrov, Nichol M.L. Wong, Sydney Leaman, Lucas G. S. Franca, Ioannis Valasakis, Jason He, David J. Lythgoe, James L. Findon, Robert H. Wichers, Vladimira Stoencheva, Dene M. Robertson, Sarah Blainey, Glynis Ivin, Stefan Holiga, Mark D. Tricklebank, Dafnis Batalle, Declan G.M. Murphy, Grainne M. McAlonan, Eileen Daly. medRxiv 2025.03.12.25323848; doi: https://doi.org/10.1101/2025.03.12.25323848
 
 ## Running
 
