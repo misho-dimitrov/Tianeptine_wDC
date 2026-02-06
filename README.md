@@ -10,7 +10,7 @@ Detailed steps for the analyses—such as the multi-echo ICA denoising, regressi
 
 ⚠️ Please use the following article for reference:
 
-Mihail Dimitrov, Nichol M.L. Wong, Sydney Leaman, Lucas G. S. Franca, Ioannis Valasakis, Jason He, David J. Lythgoe, James L. Findon, Robert H. Wichers, Vladimira Stoencheva, Dene M. Robertson, Sarah Blainey, Glynis Ivin, Stefan Holiga, Mark D. Tricklebank, Dafnis Batalle, Declan G.M. Murphy, Grainne M. McAlonan, Eileen Daly. medRxiv 2025.03.12.25323848; doi: https://doi.org/10.1101/2025.03.12.25323848
+Dimitrov M, Wong NML, Leaman S, França LGS, Valasakis I, He J, Lythgoe DJ, Findon JL, Wichers RH, Stoencheva V, Robertson DM, Blainey S, Ivin G, Holiga Š, Tricklebank MD, Batalle D, Murphy DGM, McAlonan GM, Daly E. μ Opioid Modulation of Sensorimotor Functional Connectivity in Autism: Insights From a Pharmacological Neuroimaging Investigation Using Tianeptine. Biol Psychiatry Glob Open Sci. 2025 Dec 4;6(2):100663. doi: https://doi.org/10.1016/j.bpsgos.2025.100663. PMID: 41630828; PMCID: PMC12860718.
 
 ## Running
 
